@@ -51,7 +51,7 @@ function Wallet({ donationAmount, customAmount, type, plan, tmdbId }) {
 
     // "F9rXiSZgBuU3iAG6ftfWRGUDucKY38PxBfNpAWNGec1T"
 
-    const toPublicKey = new PublicKey("C5yrAUHXwpguBibfYYnLAoiX2Tz9uv9tgyjewRgrenD4");
+    const toPublicKey = new PublicKey(""); // add your own public key
 
     // const signature = await connection.requestAirdrop(toPublicKey, LAMPORTS_PER_SOL);
 
@@ -136,7 +136,7 @@ function Wallet({ donationAmount, customAmount, type, plan, tmdbId }) {
       }
 
       // "F9rXiSZgBuU3iAG6ftfWRGUDucKY38PxBfNpAWNGec1T"
-      const toPublicKey = new PublicKey("C5yrAUHXwpguBibfYYnLAoiX2Tz9uv9tgyjewRgrenD4");
+      const toPublicKey = new PublicKey(""); // add your own public key
       // const signature = await connection.requestAirdrop(toPublicKey, LAMPORTS_PER_SOL);
 
       const transaction = new Transaction();
