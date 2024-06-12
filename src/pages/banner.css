@@ -1,0 +1,183 @@
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+.banner {
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	overflow-y: hidden;
+	color: white;
+	object-fit: fill;
+	height: 448px;
+	z-index: 1;
+	padding: 0 !important;
+	overflow-x: hidden;
+	border: none;
+	box-shadow: inset 0 11px 0 -10px #0d0d0d, inset 0 -70px 50px -10px #0d0d0d;
+}
+
+.banner__video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  pointer-events: none;
+  padding: 0 !important;
+  transform: scale(1.8);
+}
+
+.banner__background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.banner__contents {
+	position: relative;
+	margin-left: 30px;
+	padding-top: 140px;
+	z-index: 1;
+}
+
+.banner__title {
+	font-size: 3rem;
+	font-weight: 800;
+	padding-bottom: 0.3rem;
+  font-family: myFont;
+}
+
+.banner__description {
+	width: 45rem;
+	line-height: 1.3;
+	padding-top: 1rem;
+	font-size: 0.9rem;
+	max-width: 360px;
+	height: 80px;
+  font-family: myCR;
+}
+
+.banner__description::-webkit-scrollbar {
+  display: none;
+}
+
+.banner__button, .banner__button1, .banner__button2 {
+	cursor: pointer;
+	color: #fff;
+	outline: none;
+	border: none;
+	font-weight: 700;
+	border-radius: 0.2vw;
+	padding-left: 2rem;
+	padding-right: 2rem;
+	margin-right: 1rem;
+	padding-top: 0.5rem;
+	background-color: rgba(51, 51, 51, 0.5);
+	padding-bottom: 0.5rem;
+  font-family: myFont;
+}
+
+.banner__button2 {
+	padding: 10px !important;
+	border-radius: 50px !important;
+}
+
+.banner__button2 i {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.banner__button:hover {
+	color: #000;
+	background-color: #e6e6e6;
+	transition: all 0.2s;
+}
+
+.banner__button1:hover {
+  color: #000 !important;
+  background-color: #e6e6e6;
+  transition: all 0.2s;
+}
+
+.banner__button1:hover i {
+  color: #000000 !important; /* Change this to the desired color for the <i> element on hover */
+}
+
+.banner__button2:hover {
+  color: #000 !important;
+  background-color: #e6e6e6;
+  transition: all 0.2s;
+}
+
+.banner__button2:hover i {
+  color: #000000 !important; /* Change this to the desired color for the <i> element on hover */
+}
+
+.banner::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 7.4rem;
+	background-image: linear-gradient(to top, rgb(0, 0, 0, 0.98) 20%, transparent 100%);
+}
+
+.play__video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  padding: 0 !important;
+  transform: scale(1.01);
+}
+
+@media (max-width: 600px) {
+	.banner {
+		height: 300px;
+		margin-bottom: 10px !important;
+		padding: 0;
+	}
+
+	.banner__video {
+		transform: scale(1.9);
+	}
+
+	.banner__contents {
+		margin-left: 10px !important;
+		padding-top: 60px;
+	}
+
+	.banner__button, .banner__button1, .banner__button2 {
+		padding: 5px 10px !important;
+	}
+
+	.banner__button2 {
+		padding: 10px !important;
+		border-radius: 50px !important;
+	}
+
+	.banner__title {
+		font-size: 2rem;
+		font-weight: 700;
+	}
+
+	.banner__description {
+		width: 45rem;
+		max-width: 300px;
+		height: 100px;
+	}
+}
