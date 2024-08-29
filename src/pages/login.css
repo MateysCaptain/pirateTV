@@ -1,0 +1,106 @@
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	overflow-x: clip;
+}
+
+#loginDiv {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://i.ibb.co/7nVhzFx/netbg-1.jpg"); /* The image used */
+  	height: 100vh; 
+  	background-position: center; /* Center the image */
+  	background-repeat: no-repeat; /* Do not repeat the image */
+  	background-size: cover;
+}
+
+#loginDiv2 {
+	background-color: black;
+	opacity: 0.7;
+	border: 1px solid black;
+	border-radius: 5px;
+	overflow-y: hidden !important;
+	font-family: myFont;
+}
+
+#exampleCheck1 {
+	border-radius: 0 !important;
+	background-color: gray;
+	border: 0;
+}
+
+.disabled {
+	cursor: none;
+}
+
+footer {
+	margin-top: 170px;
+	background-color: rgba(0, 0, 0, 0.8);
+	padding: 20px 120px;
+	color: gray;
+	font-family: myFont;
+}
+
+.footer_div {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.footer_div div {
+	flex: 0 0 300px;
+	margin-top: 20px;
+	font-size: 12px;
+	letter-spacing: 0.5px;
+}
+
+.twitter__btn {
+	background-color: #1DA1F2;
+	color: white;
+	padding: 10px 20px;
+	border-radius: 25px;
+}
+
+.twitter__btn:hover {
+	background-color: white;
+	color: #1DA1F2;
+	padding: 10px 20px;
+	border-radius: 25px;
+}
+
+.twitter__btn:hover .fa-twitter {
+	color: #1DA1F2 !important;
+}
+
+@media (max-width: 500px) {
+	#loginDiv {
+		background-image: none;
+		height: 100vh;
+		padding: 0 !important;
+	}
+
+	#loginDiv2 {
+		opacity: 1;
+		padding: 20px 30px !important;
+	} 
+
+	#loginDiv2 h2 {
+		text-align: center;
+	}
+
+	#header .col-12 {
+		padding: 0 !important;
+	}
+
+	#logo1 {
+		width: 100px;
+		height: 70px;
+	}
+
+	footer {
+		margin-top: 50px;
+		margin-left: 10px;
+		color: gray;
+		background-color: rgba(0, 0, 0, 0.4);
+		padding: 10px 20px;
+	}
+}
